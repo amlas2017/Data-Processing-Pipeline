@@ -1,0 +1,3 @@
+What is SparkSession
+SparkSession introduced in version Spark 2.0, It is an entry point to underlying Spark functionality in order to programmatically create Spark RDD, DataFrame and DataSet.
+SparkSession’s object spark is default available in spark-shell and it can be created programmatically using SparkSession builder pattern.
