@@ -1,3 +1,12 @@
+---> Lancer Spark avec SparkSession:
+import pyspark
+import pyspark.sql
+from pyspark.sql import SparkSession
+ ??????????????????????
+
+
+
+
 TP Spark ----->   https://insatunisia.github.io/TP-BigData/tp2/
 
 --->  Cours référence Spark (français)  ---> http://b3d.bdpedia.fr/spark-batch.html
