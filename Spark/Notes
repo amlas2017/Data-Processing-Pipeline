@@ -1,15 +1,17 @@
----> Lancer Spark avec SparkSession:
+---> Lancer PySpark avec SparkSession:
+
 import pyspark
-import pyspark.sql
-from pyspark.sql import SparkSession
-spark = SparkSession.builder()
-      .master("local[1]")
-      .appName("SparkByExamples.com")
-      .getOrCreate();
+from pyspark.sql import SQLContext, SparkSession
+from pyspark import SQLContext
+
+# Setup the Configuration
+conf = pyspark.SparkConf()
+
+spark = SparkSession.builder.config(conf=conf).getOrCreate()
+sqlcontext = SQLContext(spark)
 
 
-
-
+=========================================================================================================================================================================
 
 TP Spark ----->   https://insatunisia.github.io/TP-BigData/tp2/
 
