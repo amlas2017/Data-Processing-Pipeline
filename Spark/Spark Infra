@@ -1,0 +1,6 @@
+--- Cluster Docker Spark Airflow & Jupyter Notebook : https://medium.com/data-arena/building-a-spark-and-airflow-development-environment-with-docker-f0b9b625edd8
+    Notes: repo Git  ---> https://github.com/cordon-thiago/airflow-spark
+      1) Adding wtforms==2.3.3 to the requirements.txt (airflow-spark/docker/docker-airflow/requirements.txt) file before executing the docker build command.
+      2) Mettre la bonne version de 'docker-airflow-spark:1.10.7_3.1.2'  dans docker-compose.yml
+      2) For Jupyter notebook, you must copy the URL with the token generated when the container is started and paste in your browser. 
+         The URL with the token can be taken from container logs using:  $ docker logs -f docker_jupyter-spark_1 
