@@ -26,3 +26,6 @@ SparkSession’s object spark is default available in spark-shell and it can be 
       SQL Context,
       Streaming Context,
       Hive Context.
+
+==========================================================Lancer Spark Job avec Mysql dans un cluster AWS===============================================================================================================
+   ------------->    https://www.youtube.com/watch?v=SpvMRarBXYA&list=PLcw5TTdQlsEBmYJ62aWNS6msW3A0qp4Wi&index=6
