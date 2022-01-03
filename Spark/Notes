@@ -1,3 +1,7 @@
+---> Cours pratique  ------------CNAM------------>  http://cedric.cnam.fr/vertigo/Cours/RCP216/tpSparkScala.html
+
+========================================================================================================================================================================
+
 ---> Lancer PySpark avec SparkSession:
 
 import pyspark
