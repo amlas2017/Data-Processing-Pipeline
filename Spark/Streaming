@@ -1,4 +1,6 @@
 ---> Spark-kafka  ----->   Garantir la sémantique de livraison Exactement Une Fois (gérer l'offset)   -----> https://www.youtube.com/watch?v=Bl8QWKkjcRs
 
+---> Spark periodically queries messages from Kafka with a range of offsets, which in short we call batch. Spark uses a low level consumer API and fetches messages 
+     directly from Kafka with a defined range of offsets. Parallelism is defined by a partition in Kafka and the Spark direct approach takes advantage of partitions.
 
 ---> Spark-Kafka-Scala  -----> https://www.youtube.com/watch?v=DTbW1fQgws0
