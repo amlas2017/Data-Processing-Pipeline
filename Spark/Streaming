@@ -1,4 +1,4 @@
----> Spark-kafka  ----->   Garantir la sémantique de livraison Exactement Une Fois   -----> https://www.youtube.com/watch?v=Bl8QWKkjcRs
+---> Spark-kafka  ----->   Garantir la sémantique de livraison Exactement Une Fois (gérer l'offset)   -----> https://www.youtube.com/watch?v=Bl8QWKkjcRs
 
 
 ---> Spark-Kafka-Scala  -----> https://www.youtube.com/watch?v=DTbW1fQgws0
