@@ -1,3 +1,5 @@
+--- Data pipeline using Kafka(Producer in Python) - Elasticsearch - Logstash - Kibana   ----->  https://www.youtube.com/watch?v=IFfULE1VxE0
+
 --- Lister les indices:    curl 'localhost:9200/_cat/indices?v'
 
 --- Les stats :    curl localhost:9200/_stats
