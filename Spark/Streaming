@@ -1,3 +1,5 @@
+---> Spark Streaming + kafka(Python Producer) + Cassandra + Scala  ---->   https://www.youtube.com/watch?v=CGT8v8_9i2g&t=1540s
+
 ---> Spark-kafka  ----->   Garantir la sémantique de livraison Exactement Une Fois (gérer l'offset)   -----> https://www.youtube.com/watch?v=Bl8QWKkjcRs
 
 ---> Spark periodically queries messages from Kafka with a range of offsets, which in short we call batch. Spark uses a low level consumer API and fetches messages 
