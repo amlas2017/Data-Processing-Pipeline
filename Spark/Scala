@@ -6,3 +6,5 @@
 ----------------------------------------------------------------------------
 
 --> Notes élémentaires Scala :   https://www.data-transitionnumerique.com/scala-pratique/
+
+--> Conversion de types de données par Spark Scala: parquet to json (et autres) ----> https://www.youtube.com/watch?v=HF1fl7ugDl8
