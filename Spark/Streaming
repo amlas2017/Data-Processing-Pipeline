@@ -6,3 +6,6 @@
      directly from Kafka with a defined range of offsets. Parallelism is defined by a partition in Kafka and the Spark direct approach takes advantage of partitions.
 
 ---> Spark-Kafka-Scala  -----> https://www.youtube.com/watch?v=DTbW1fQgws0
+
+---> Read, Parse And Transform Kafka Json In Spark Spark Streaming With Kafka ------->  https://www.youtube.com/watch?v=FEJ9BOTusME 
+     Spark + java --->  lire un json depuis kafka, l'afficher dans la console, le transformer en colonnes vi un Schema
