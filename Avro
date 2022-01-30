@@ -1,0 +1,4 @@
+--- Avro est un format de stockage basé sur des lignes qui est largement utilisé comme processus de sérialisation. AVRO stocke son schéma au format JSON, 
+    ce qui le rend facile à lire et à interpréter par n’importe quel programme. 
+    Les données elles-mêmes sont stockées au format binaire en les rendant compactes et efficaces. Une caractéristique clé d’AVRO est liée au fait qu’il gère 
+    facilement l’évolution des schémas. Il joint des métadonnées à leurs données dans chaque enregistrement.
