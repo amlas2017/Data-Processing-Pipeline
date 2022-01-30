@@ -3,3 +3,9 @@
     binaire contenant des métadonnées sur leur contenu. Les métadonnées de colonne sont stockées à la fin du fichier, ce qui permet une écriture rapide en une seule 
     passe. Le parquet est optimisé pour le paradigme “write once read many” (WORM).
     
+
+   -- Fichiers divisibles.
+   -- Organisé par colonne, permettant une meilleure compression, car les données sont plus homogènes.
+   -- Haute efficacité pour les workloads OLAP.
+   -- Prise en charge de l’évolution du schéma.
+   -- Limité au traitement par batch.
