@@ -1,0 +1,5 @@
+--- Parquet est un format de fichier open source créer dans l’écosystème Hadoop. Parquet stocke les données par colonne comme le format ORC. Il fournit des schémas 
+    de compression et d’encodage de données efficaces avec des performances améliorées pour gérer des données complexes en masse. Un fichier Parquet est un fichier 
+    binaire contenant des métadonnées sur leur contenu. Les métadonnées de colonne sont stockées à la fin du fichier, ce qui permet une écriture rapide en une seule 
+    passe. Le parquet est optimisé pour le paradigme “write once read many” (WORM).
+    
