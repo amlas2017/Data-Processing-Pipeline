@@ -1,0 +1,4 @@
+--->   https://www.youtube.com/watch?v=w8nKMl2CP7o
+       outils utilisés: EMR, AirFlow(Docker-compose), Pyspark, Livy, S3  
+                            (https://www.mockaroo.com  pour générer la data)
+                            (https://dbeaver.io    ----->  gestionnaire de différentes bases de données:SQL, NoSQL,...) 
