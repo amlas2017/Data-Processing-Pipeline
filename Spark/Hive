@@ -1,3 +1,10 @@
 ---  An external table is a table for which Hive does not manage storage. If you delete an external table, only the definition in Hive is deleted. 
      The data remains.
      An internal table is a table that Hive manages.
+     
+     When a user creates a table in Hive specifying the external keyword, then an external table is created. 
+     The data present in the external table will be fully managed by HDFS contrary to an internal table.
+     
+     When a user creates a table in Hive it is by default an internal table created in the /user/hive/warehouse directory in HDFS which is its default storage location.
+     The data present in the internal table will be stored in this directory and is fully managed by Hive and thus an internal table is also referred to as a managed 
+     table.
