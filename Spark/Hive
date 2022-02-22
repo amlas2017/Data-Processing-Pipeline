@@ -1,0 +1,3 @@
+---  An external table is a table for which Hive does not manage storage. If you delete an external table, only the definition in Hive is deleted. 
+     The data remains.
+     An internal table is a table that Hive manages.
