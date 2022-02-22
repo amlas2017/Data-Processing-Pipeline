@@ -1,3 +1,6 @@
+--- AWS Glue ---->   c’est le “service d’intégration de données” d’AWS, ce qui correspond globalement à de l’ETL et des outils autour de l’ETL. 
+                     Glue permet de visualiser, préparer, structurer et étudier vos données.
+
 --- Le Glue Data Catalog est la partie de AWS Glue dédiée à la structuration de vos données. Il se comporte comme une base de données NoSQL, où vous enregistrez 
     des bases de données et des tables. 
     Chaque table est décrite pas un schéma (les colonnes d’un jeu de données), et référence un chemin vers l’endroit où est localisée la donnée.
