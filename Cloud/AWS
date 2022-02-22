@@ -1,0 +1,5 @@
+--- Le Glue Data Catalog est la partie de AWS Glue dédiée à la structuration de vos données. Il se comporte comme une base de données NoSQL, où vous enregistrez 
+    des bases de données et des tables. 
+    Chaque table est décrite pas un schéma (les colonnes d’un jeu de données), et référence un chemin vers l’endroit où est localisée la donnée.
+    Ce chemin peut soit être un chemin vers un bucket AWS S3, soit une référence vers AWS Kinesis/Apache Kafka (Glue Data Catalog peut aussi être utilisé pour 
+    structurer vos pipelines d’évènements).
