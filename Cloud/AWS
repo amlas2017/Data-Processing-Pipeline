@@ -1,8 +1,14 @@
---- AWS Glue ---->   c’est le “service d’intégration de données” d’AWS, ce qui correspond globalement à de l’ETL et des outils autour de l’ETL. 
+---> AWS Glue ---->   c’est le “service d’intégration de données” d’AWS, ce qui correspond globalement à de l’ETL et des outils autour de l’ETL. 
                      Glue permet de visualiser, préparer, structurer et étudier vos données.
 
---- Le Glue Data Catalog est la partie de AWS Glue dédiée à la structuration de vos données. Il se comporte comme une base de données NoSQL, où vous enregistrez 
+---> Le Glue Data Catalog est la partie de AWS Glue dédiée à la structuration de vos données. Il se comporte comme une base de données NoSQL, où vous enregistrez 
     des bases de données et des tables. 
     Chaque table est décrite pas un schéma (les colonnes d’un jeu de données), et référence un chemin vers l’endroit où est localisée la donnée.
     Ce chemin peut soit être un chemin vers un bucket AWS S3, soit une référence vers AWS Kinesis/Apache Kafka (Glue Data Catalog peut aussi être utilisé pour 
     structurer vos pipelines d’évènements).
+
+---> Athena est un service interactif de requêtage type-SQL, capable de lire et d’écrire dans des Data Lakes. Son utilité se trouve notamment dans sa capacité à 
+     accéder et agréger des quantités potentiellement massives de données. 
+     Pour l’utiliser, votre donnée doit être référencée dans un catalogue Glue Data Catalog (NoSQL). 
+     Athena n’est pas réellement capable de comprendre convenablement des fichiers CSV et vous aurez probablement besoin de quelques combines pour obtenir des résultats
+     convenables. C’est pour cela que nous vous recommandons d’utiliser Athena lorsque vous souhaitez davantage utiliser du JSON ou du Parquet.
