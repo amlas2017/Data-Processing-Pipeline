@@ -1,3 +1,10 @@
+--- Utiliser un fichier Parquet, (format de stockage d’informations colonnes) avec une compression snappy permet d’optimiser votre job Spark.   
+    L’encodage au format binaire des informations et la compression par colonne permettent un traitement efficace d’un très grand volume de données, d’autant plus 
+    que Parquet détecte les données de même type et les données identiques. 
+    Il est très performant pour la lecture de données massives de fichiers à structure complexe et minimise les entrées/sorties.
+
+
+
 --- Parquet est un format de fichier open source créer dans l’écosystème Hadoop. Parquet stocke les données par colonne comme le format ORC. Il fournit des schémas 
     de compression et d’encodage de données efficaces avec des performances améliorées pour gérer des données complexes en masse. Un fichier Parquet est un fichier 
     binaire contenant des métadonnées sur leur contenu. Les métadonnées de colonne sont stockées à la fin du fichier, ce qui permet une écriture rapide en une seule 
