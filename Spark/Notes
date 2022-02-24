@@ -1,4 +1,5 @@
----> Les bonnes pratiques Spark:
+---> Les bonnes pratiques Spark:     --->   https://www.next-decision.fr/wiki/les-bonnes-pratiques-spark
+
     === Privilégier les RDD ou les DataFrames / Datasets en fonction des données et de la facilité d'utilisation
     === Choisir son format de fichiers idéal : Parquet avec une compression snappy.
     === Éviter les Shuffles de données et filtrer les informations non pertinentes : groupByKey(), reduceByKey(), repartition(), join()
