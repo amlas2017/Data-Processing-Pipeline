@@ -1,3 +1,15 @@
+---> Les bonnes pratiques Spark:
+    === Privilégier les RDD ou les DataFrames / Datasets en fonction des données et de la facilité d'utilisation
+    === Choisir son format de fichiers idéal : Parquet avec une compression snappy.
+    === Éviter les Shuffles de données et filtrer les informations non pertinentes : groupByKey(), reduceByKey(), repartition(), join()
+    === Être attentif au partitionnement : coalesce() , répartition() et partitionBy().
+    === Réutiliser efficacement des opérations - Persistance
+    === Optimiser les performances avec des variables distribuées et partagées: 
+        ----> brodcast() vous permet de distribuer une copie de la variable sur tous les nœuds du cluster.
+        ----> Les accumulateurs sont des variables partagées sur plusieurs nœuds du cluster et supportent uniquement les opérations associatives et commutatives.
+    
+
+
 ---> Aggregation de data avec spark utilisant "window" (java)  ----------> https://www.youtube.com/watch?v=WQgHKPCwr8A
 
 ---> Cours pratique  ------------CNAM------------>  http://cedric.cnam.fr/vertigo/Cours/RCP216/tpSparkScala.html
