@@ -1,3 +1,6 @@
+---> Install Environnement de Travail avec PyCharm (jupyter-Lab inclu):     https://www.youtube.com/watch?v=Y1cKP_IJAgw
+
+
 ---> Les bonnes pratiques Spark:     --->   https://www.next-decision.fr/wiki/les-bonnes-pratiques-spark
 
     === Privilégier les RDD ou les DataFrames / Datasets en fonction des données et de la facilité d'utilisation
