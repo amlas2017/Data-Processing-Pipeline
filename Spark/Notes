@@ -1,3 +1,30 @@
+---> Un RDD, venant de l’API bas-niveau, est une « boîte » destinée à contenir n’importe quel document, sans aucun préjugé sur la structure (ou l’absence de structure)
+de ce dernier. Cela rend le système très généraliste, mais empêche une manipulation fine des constituants des documents, comme par exemple le filtrage en fonction de 
+la valeur d’un champ. C’est le programmeur de l’application qui doit fournir la fonction effectuant le filtre.
+
+On l’a dit, Spark implémente une API de plus haut niveau avec des structures assimilables à des tables relationnelles : les Dataset et DataFrame. Ils comportent un 
+schéma, avec les définitions des colonnes. La connaissance de ce schéma – et éventuellement de leur type – permet à Spark de proposer des opérations plus fines, 
+et des optimisations inspirées des techniques d’évaluation de requêtes dans les systèmes relationnels. En fait, on se ramène à une implantation distribuée du 
+langage SQL. En interne, un avantage important de la connaissance du schéma est d’éviter de recourir à la sérialisation des objets Java (opération effectuée dans 
+le cas des RDD pour écrire sur disque et échanger des données en réseau).
+
+On distingue les Dataset, dont le type des colonnes est connu, et les DataFrames. Un DataFrame n’est rien d’autre qu’un Dataset (DataFrame = Dataset[Row]) contenant 
+des lignes de type Row dont le schéma précis n’est pas connu. Ce typage des structures de données est lié au langage de programmation : Python et R étant dynamiquement
+typés, ils n’accèdent qu’aux DataFrames. En Scala et Java en revanche, on utilise les Datasets, des objets JVM fortement typés.
+
+Tout cela est un peu abstrait? Voici un exemple simple qui permet d’illustrer les principaux avantages des Dataset/DataFrame. Nous voulons appliquer un opérateur qui 
+filtre les films dont le genre est « Drame ». On va exprimer le filtre (en simplifiant un peu) comme suit:
+
+                         films.filter(film.getGenre() == 'Drame');
+
+Si films est un RDD, Spark n’a aucune idée sur la structure des documents qu’il contient. Spark va donc instancier un objet Java (éventuellement en dé-sérialisant une 
+chaîne d’octets reçue par réseau ou lue sur disque) et appeler la méthode getGenre(). Cela peut être long, et impose surtout de créer un objet pour un simple test.
+
+Avec un Dataset ou DataFrame, le schéma est connu et Spark utilise son propre système d’encodage/décodage à la place de la sérialisation Java. De plus, dans le cas des Dataset, la valeur du champ genre peut être testée directement sans même effectuer de décodage depuis la représentation binaire.
+
+Il est, en résumé, tout à fait préférable d’utiliser les Dataset dès que l’on a affaire à des données structurées.
+
+
 ---> Install Environnement de Travail avec PyCharm (jupyter-Lab inclu):     https://www.youtube.com/watch?v=Y1cKP_IJAgw
 
 
